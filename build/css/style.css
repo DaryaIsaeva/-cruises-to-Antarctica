@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -387,9 +389,33 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
 }
 
 *,
@@ -411,8 +437,8 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -425,7 +451,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #011c40;
   text-decoration: none;
 }
 
@@ -436,6 +462,10 @@ video {
   height: auto;
 }
 
+svg {
+  display: block;
+}
+
 textarea {
   resize: none;
 }
@@ -443,7 +473,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
   box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #011c40;
 }
 
 input,
@@ -754,6 +784,735 @@ button,
   pointer-events: auto;
 }
 
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 35px 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-nav__logo {
+  display: block;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  -webkit-column-gap: 33px;
+  -moz-column-gap: 33px;
+  column-gap: 33px;
+  row-gap: 15px;
+}
+
+.main-nav__list a {
+  color: #f9fbfd;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-block {
+  padding: 283px 0;
+  background-image: url("../img/background/main-background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-block__container {
+  padding: 0 198px;
+}
+
+.main-block h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-block p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-cruises {
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.about-cruises__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 560px;
+  grid-template-columns: 1fr 560px;
+  -webkit-column-gap: 88px;
+  -moz-column-gap: 88px;
+  column-gap: 88px;
+}
+
+.about-cruises__text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about-cruises h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.about-cruises p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.about-cruises__image {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.advantages {
+  padding: 120px 0;
+  background-image: url("../img/background/advantages-background-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.advantages__item {
+  padding: 87px 30px 50px 30px;
+  background-color: #f9fbfd;
+  position: relative;
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32px;
+}
+
+.advantages__item--ship::before {
+  width: 27px;
+  background-image: url("../img/svg/ship.svg");
+}
+
+.advantages__item--all-inclusive::before {
+  width: 38px;
+  background-image: url("../img/svg/all-inclusive.svg");
+}
+
+.advantages__item--zodiac::before {
+  width: 44px;
+  background-image: url("../img/svg/zodiac.svg");
+}
+
+.advantages h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.advantages p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.catalog {
+  padding-top: 95px;
+  padding-bottom: 120px;
+}
+
+.catalog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 118px;
+}
+
+.catalog h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.catalog__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__item {
+  color: #f9fbfd;
+  background-color: #011c40;
+  padding: 35px 25px;
+  min-height: 386px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 25px;
+}
+
+.catalog__item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog__item::after {
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  bottom: 30px;
+  left: 30px;
+}
+
+.catalog__item--astoria::before {
+  background-image: url("../img/content/astoria.jpg");
+}
+
+.catalog__item--astoria::after {
+  content: "Круиз “Астория”";
+}
+
+.catalog__item--eline::before {
+  background-image: url("../img/content/minion-1.jpg");
+}
+
+.catalog__item--eline::after {
+  content: "Круиз “Элайн”";
+}
+
+.catalog__item--atlantis::before {
+  background-image: url("../img/content/atlantis.jpg");
+}
+
+.catalog__item--atlantis::after {
+  content: "Круиз “Атлантис”";
+}
+
+.catalog__item--odissey::before {
+  background-image: url("../img/content/odissey.jpg");
+}
+
+.catalog__item--odissey::after {
+  content: "Круиз “Одиссей”";
+}
+
+.catalog__item--olimpia::before {
+  background-image: url("../img/content/odissey.jpg");
+}
+
+.catalog__item--olimpia::after {
+  content: "Круиз “Олимпия”";
+}
+
+.catalog__item--aurora::before {
+  background-image: url("../img/content/aurora.jpg");
+}
+
+.catalog__item--aurora::after {
+  content: "Круиз “Аврора”";
+}
+
+.catalog__item--leonor::before {
+  background-image: url("../img/content/leonor.jpg");
+}
+
+.catalog__item--leonor::after {
+  content: "Круиз “Леонор”";
+}
+
+.catalog__item--minion::before {
+  background-image: url("../img/content/minion-1.jpg");
+}
+
+.catalog__item--minion::after {
+  content: "Круиз “Минион - 1”";
+}
+
+.catalog__item:hover::before,
+.catalog__item:hover::after {
+  display: none;
+}
+
+.catalog h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.catalog dl {
+  margin: 0;
+}
+
+.catalog dt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.catalog dd {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.catalog dd:last-of-type {
+  margin-bottom: 0;
+}
+
+.catalog a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  display: block;
+  padding: 14px 10px 15px 10px;
+  text-align: center;
+  margin-top: auto;
+  background-color: #f9fbfd;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.early-booking {
+  padding: 50px 0;
+  background-image: url("../img/background/booking-background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.early-booking__container {
+  padding: 0 163px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 403px;
+  grid-template-columns: 1fr 403px;
+  -webkit-column-gap: 144px;
+  -moz-column-gap: 144px;
+  column-gap: 144px;
+}
+
+.early-booking__text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.early-booking__text h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.early-booking__text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.early-booking__form {
+  padding: 50px;
+  background-color: #011c40;
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.early-booking__form p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f9fbfd;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.early-booking__form input {
+  padding: 11px 16px;
+  background-color: #f9fbfd;
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.early-booking__form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.early-booking__form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.early-booking__form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.early-booking__form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.early-booking__form input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.early-booking__form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.early-booking__form span {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #f9fbfd;
+}
+
+.early-booking__form input[type=checkbox] + span {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+  margin-right: 5px;
+  position: relative;
+}
+
+.early-booking__form input[type=checkbox]:checked + span::before {
+  position: absolute;
+  content: "";
+  left: 6px;
+  top: 4px;
+  width: 6px;
+  height: 10px;
+  border: solid #101a56;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.early-booking__form button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding: 15px 10px 17px 10px;
+  background-color: #f9fbfd;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contacts {
+  padding: 120px 0;
+}
+
+.contacts__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px 1fr;
+  grid-template-columns: 560px 1fr;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+}
+
+.contacts__map {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url("../img/background/map-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 306px;
+  position: relative;
+}
+
+.contacts__map::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg/pin.svg");
+  width: 18px;
+  height: 22px;
+  top: 217px;
+  left: 249px;
+}
+
+.contacts iframe {
+  display: block;
+  width: 560px;
+  height: 306px;
+}
+
+.contacts__text {
+  margin: auto 0;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.contacts p {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts__item::before,
+.contacts__item ::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  left: 0;
+}
+
+.contacts__item:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.contacts__item--address::before {
+  height: 22px;
+  background-image: url("../img/svg/pin.svg");
+}
+
+.contacts__item--phone::before {
+  height: 18px;
+  background-image: url("../img/svg/phone.svg");
+}
+
+.contacts__item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer {
+  background-color: #011c40;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+}
+
+.footer-nav__logo {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.footer-nav__list {
+  padding: 0;
+  margin: 13px auto 0 40px;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  -webkit-column-gap: 33px;
+  -moz-column-gap: 33px;
+  column-gap: 33px;
+  row-gap: 15px;
+}
+
+.footer-nav__list a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9fbfd;
+  cursor: pointer;
+  display: block;
+}
+
+.footer-nav__social-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -webkit-column-gap: 7px;
+  -moz-column-gap: 7px;
+  column-gap: 7px;
+  row-gap: 15px;
+}
+
+.footer-nav__social-list a {
+  display: block;
+  padding: 10px;
+}
+
+.footer-nav__social-item svg {
+  display: block;
+}
+
+.footer-nav__social-item--ok svg {
+  width: 9.6px;
+}
+
+.no-js .contacts__map::before {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -799,6 +1558,217 @@ button,
   .container {
     padding: 0 45px;
   }
+
+  .main-nav {
+    padding: 30px 0;
+  }
+
+  .main-nav__logo img {
+    width: 38px;
+    height: 20px;
+  }
+
+  .main-nav__list {
+    -webkit-column-gap: 23px;
+    -moz-column-gap: 23px;
+    column-gap: 23px;
+  }
+
+  .main-nav__list a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .main-block {
+    padding: 280px 0;
+    background-image: url("../img/background/main-background-tablet.jpg");
+  }
+
+  .main-block__container {
+    padding: 0 45px;
+  }
+
+  .main-block h1 {
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: none;
+    margin-bottom: 29px;
+  }
+
+  .main-block p {
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: none;
+  }
+
+  .about-cruises {
+    padding: 100px 0;
+  }
+
+  .about-cruises__container {
+    -ms-grid-columns: 1fr 324px;
+    grid-template-columns: 1fr 324px;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+  }
+
+  .about-cruises h2 {
+    font-size: 26px;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+
+  .about-cruises__image img {
+    width: 324px;
+  }
+
+  .advantages {
+    padding: 100px 0;
+    background-image: url("../img/background/advantages-background-tablet.png");
+  }
+
+  .advantages h2 {
+    font-size: 26px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+  }
+
+  .advantages__item::before {
+    height: 26px;
+  }
+
+  .advantages__item {
+    padding: 76px 16px 25px 20px;
+  }
+
+  .advantages__item--ship::before {
+    width: 21px;
+  }
+
+  .advantages__item--all-inclusive::before {
+    width: 27px;
+  }
+
+  .advantages__item--zodiac::before {
+    width: 36px;
+  }
+
+  .advantages h3 {
+    line-height: 140%;
+  }
+
+  .catalog {
+    padding: 100px 0;
+  }
+
+  .catalog__container {
+    padding: 0 60px;
+  }
+
+  .catalog h2 {
+    font-size: 26px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .early-booking {
+    padding: 100px 0;
+    background-image: url("../img/background/booking-background-tablet.jpg");
+  }
+
+  .early-booking__container {
+    padding: 0 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .early-booking__text {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .early-booking__text h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+
+  .early-booking__text p {
+    max-width: 352px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .early-booking__form {
+    max-width: 403px;
+  }
+
+  .contacts {
+    padding: 100px 0;
+  }
+
+  .contacts__container {
+    -ms-grid-columns: 324px 1fr;
+    grid-template-columns: 324px 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .contacts__map {
+    background-image: url("../img/background/map-tablet.jpg");
+    min-height: 335px;
+  }
+
+  .contacts__map::before {
+    top: 218px;
+    left: 109px;
+  }
+
+  .contacts iframe {
+    width: 324px;
+    height: 335px;
+  }
+
+  .footer-nav__logo img {
+    width: 38px;
+    height: 20px;
+  }
+
+  .footer-nav__list {
+    margin: 5px auto 0 25px;
+    -webkit-column-gap: 23px;
+    -moz-column-gap: 23px;
+    column-gap: 23px;
+  }
+
+  .footer-nav__list a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer-nav__social-list {
+    margin-top: -8px;
+  }
+
+  .footer-nav__social-item svg {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -817,6 +1787,242 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .main-nav {
+    padding: 20px 0;
+  }
+
+  .main-nav__logo img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .main-nav__list {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-open.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .main-block {
+    padding: 185px 0;
+    background-image: url("../img/background/main-background-mobile.jpg");
+  }
+
+  .main-block__container {
+    padding: 0 15px;
+  }
+
+  .main-block h1 {
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 25px;
+  }
+
+  .main-block p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .about-cruises {
+    padding-top: 60px;
+    padding-bottom: 85px;
+  }
+
+  .about-cruises__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-cruises h2 {
+    font-size: 24px;
+  }
+
+  .about-cruises p {
+    margin-bottom: 50px;
+  }
+
+  .about-cruises__image img {
+    width: 100%;
+  }
+
+  .advantages {
+    padding: 65px 0;
+    background-image: url("../img/background/advantages-background-mobile.png");
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .catalog {
+    padding: 65px 0;
+  }
+
+  .catalog__container {
+    padding: 0 25px;
+  }
+
+  .catalog h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .early-booking {
+    padding: 65px 0;
+    background-image: url("../img/background/booking-background-mobile.jpg");
+  }
+
+  .early-booking__container {
+    padding: 0 15px;
+  }
+
+  .early-booking__text h2 {
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .early-booking__text p {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 40px;
+    max-width: 257px;
+  }
+
+  .early-booking__form {
+    max-width: 100%;
+    padding: 40px 30px;
+  }
+
+  .early-booking__form p {
+    line-height: 140%;
+  }
+
+  .early-booking__form span {
+    line-height: 120%;
+  }
+
+  .early-booking__form input[type=checkbox] + span {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .contacts {
+    padding: 65px 0;
+  }
+
+  .contacts__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__map {
+    background-image: url("../img/background/map-mobile.jpg");
+    min-height: 316px;
+  }
+
+  .contacts__map::before {
+    top: 224px;
+    left: 112px;
+  }
+
+  .contacts iframe {
+    width: 290px;
+    height: 316px;
+  }
+
+  .contacts__text {
+    margin-bottom: 40px;
+  }
+
+  .footer-nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-nav__logo img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .footer-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    gap: 23px;
+  }
+
+  .footer-nav__list a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .footer-nav__social-list {
+    margin-top: 0;
+    margin-left: -10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .footer-nav__social-list a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 

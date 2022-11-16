@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Лендинг компании, специализирующейся на морских круизах в Антарктику.">
     <title>Cruises to Antarctica</title>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -19,16 +27,16 @@
 
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#advantages">Преимущества</a>
+                <a href="#advantages">Преимущества</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="">Направления</a>
+                <a href="#">Направления</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#upcoming-cruises">Ближайшие круизы</a>
+                <a href="#upcoming-cruises">Ближайшие круизы</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#contacts">Контакты</a>
+                <a href="#contacts">Контакты</a>
               </li>
             </ul>
 
@@ -40,21 +48,25 @@
       </header>
 
       <main class="main">
-        <section class="promo">
-          <div class="container">
+        <section class="main-block">
+          <div class="main-block__container container">
             <h1>Круизы в Антарктику</h1>
-            <p>Волшебный мир айсбергов и пингвинов</p>
+            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
           </div>
         </section>
 
-        <section class="about-criuses">
-          <div class="container">
-            <h2>Путешествие на край Земли</h2>
-            <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-            <picture>
-              <source srcset="" type="image/webp">
-              <img src="" srcset="" width="560" height="301" alt="Пингвины">
-            </picture>
+        <section class="about-cruises">
+          <div class="about-cruises__container container">
+            <div class="about-cruises__text">
+              <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+            </div>
+            <div class="about-cruises__image">
+              <picture>
+                <source srcset="" type="image/webp">
+                <img src="../img/content/penguins.jpg" srcset="../img/content/penguins@2x.jpg" width="560" height="301" alt="Пингвины">
+              </picture>
+            </div>
           </div>
         </section>
 
@@ -62,15 +74,15 @@
           <div class="container">
             <h2>Преимущества</h2>
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--ship">
                 <h3>Небольшой круизный лайнер</h3>
                 <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--all-inclusive">
                 <h3>Система все включено</h3>
                 <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--zodiac">
                 <h3>Экскурсионные туры на Zodiac</h3>
                 <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiack c опытными экскурсоводами. </p>
               </li>
@@ -78,11 +90,11 @@
           </div>
         </section>
 
-        <section class="upcoming-cruises" id="upcoming-cruises">
-          <div class="container">
+        <section class="catalog" id="upcoming-cruises">
+          <div class="catalog__container container">
             <h2>Ближайшие круизы</h2>
-            <ul class="upcoming-cruises__list">
-              <li class="upcoming-cruises__item">
+            <ul class="catalog__list">
+              <li class="catalog__item catalog__item--astoria">
                 <h3>Круиз “Астория”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -96,7 +108,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--eline">
                 <h3>Круиз “Элайн”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -110,7 +122,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--atlantis">
                 <h3>Круиз “Атлантис”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -124,7 +136,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--odissey">
                 <h3>Круиз “Одиссей”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -138,7 +150,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--olimpia">
                 <h3>Круиз “Олимпия”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -152,7 +164,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--aurora">
                 <h3>Круиз “Аврора”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -166,7 +178,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--leonor">
                 <h3>Круиз “Леонор”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -180,7 +192,7 @@
                 </dl>
                 <a href="#">Забронировать</a>
               </li>
-              <li class="upcoming-cruises__item">
+              <li class="catalog__item catalog__item--minion">
                 <h3>Круиз “Минион - 1”</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -199,11 +211,13 @@
         </section>
 
         <section class="early-booking">
-          <div class="container">
-            <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+          <div class="early-booking__container container">
+            <div class="early-booking__text">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до даты выезда и&nbsp;экономьте до 50%</p>
+            </div>
             <form class="early-booking__form">
-              <p></p>
+              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
               <label class="visually-hidden" for="name">Введите ваше имя</label>
               <input type="text" id="name" name="name" placeholder="Имя">
               <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
@@ -211,7 +225,8 @@
               <label class="visually-hidden" for="email">Введите ваш адрес электронной почты</label>
               <input type="email" id="email" name="email" placeholder="Email">
               <label>
-                <input type="checkbox">
+                <input class="visually-hidden" type="checkbox" checked>
+                <span></span>
                 <span>Я согласен на обработку моих персональных данных</span>
               </label>
               <button type="submit">Оставить заявку</button>
@@ -219,15 +234,17 @@
           </div>
         </section>
 
-        <section class="contacts" id="contacts">
-          <div class="container">
-            <!-- Тут будет карта -->
-            <div class="contacts__wrapper">
-              <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+        <section class="contacts no-js" id="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728558!2d30.320472477004596!3d59.938716474915196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1668547429244!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+              <div class="contacts__text">
+              <p>У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в офис и мы вам все расскажем.</p>
               <ul class="contacts__list">
-                <li class="contacts__item">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</li>
-                <li class="contacts__item">
-                  <a href="">8-800-200-00-00</a>
+                <li class="contacts__item contacts__item--address">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</li>
+                <li class="contacts__item contacts__item--phone">
+                  <a href="tel:8-800-200-00-00">8-800-200-00-00</a>
                 </li>
               </ul>
             </div>
@@ -244,33 +261,42 @@
 
             <ul class="footer-nav__list">
               <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#advantages">Преимущества</a>
+                <a href="#advantages">Преимущества</a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__link" href="">Направления</a>
+                <a href="#">Направления</a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#upcoming-cruises">Ближайшие круизы</a>
+                <a href="#upcoming-cruises">Ближайшие круизы</a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#contacts">Контакты</a>
+                <a href="#contacts">Контакты</a>
               </li>
             </ul>
 
             <ul class="footer-nav__social-list">
-              <li class="footer-nav__social-item">
-                <a class="footer-nav__social-link">
+              <li class="footer-nav__social-item footer-nav__social-item--ok">
+                <a>
                   <span class="visually-hidden">Мы в Одноклассниках</span>
+                  <svg width="12" height="20">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
                 </a>
               </li>
               <li class="footer-nav__social-item">
-                <a class="footer-nav__social-link">
+                <a>
                   <span class="visually-hidden">Мы на Яндекс-дзен</span>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#dzen"></use>
+                  </svg>
                 </a>
               </li>
               <li class="footer-nav__social-item">
-                <a class="footer-nav__social-link">
+                <a>
                   <span class="visually-hidden">Мы на Реддит </span>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -278,35 +304,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

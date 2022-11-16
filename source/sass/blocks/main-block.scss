@@ -1,0 +1,71 @@
+.main-block {
+  padding: 283px 0;
+  background-image: url("../img/background/main-background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include vp-1023 {
+    padding: 280px 0;
+    background-image: url("../img/background/main-background-tablet.jpg");
+  }
+
+  @include vp-767 {
+    padding: 185px 0;
+    background-image: url("../img/background/main-background-mobile.jpg");
+  }
+}
+
+.main-block__container {
+  padding: 0 198px;
+
+  @include vp-1023 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.main-block h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $color-alice-blue;
+  text-shadow: $text-shadow;
+
+  @include vp-1023 {
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: none;
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 25px;
+  }
+}
+
+.main-block p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-alice-blue;
+  text-shadow: $text-shadow;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: none;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
