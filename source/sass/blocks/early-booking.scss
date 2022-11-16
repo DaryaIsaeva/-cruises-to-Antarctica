@@ -1,5 +1,6 @@
 .early-booking {
-  padding: 50px 0;
+  padding-top: 48px;
+  padding-bottom: 50px;
   background-image: url("../img/background/booking-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,6 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -7px;
 
   @include vp-1023 {
     align-items: center;
@@ -49,7 +51,7 @@
   font-size: 40px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @include vp-1023 {
     font-size: 34px;
@@ -68,9 +70,9 @@
   font-size: 18px;
   line-height: 150%;
   margin: 0;
+  max-width: 352px;
 
   @include vp-1023 {
-    max-width: 352px;
     text-align: center;
     margin-bottom: 60px;
   }
@@ -85,6 +87,7 @@
 
 .early-booking__form {
   padding: 50px;
+  padding-top: 45px;
   background-color: $color-tangaroa;
   box-shadow: $box-shadow;
   display: flex;
@@ -107,7 +110,7 @@
   line-height: 150%;
   color: $color-alice-blue;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 
   @include vp-767 {
     line-height: 140%;
@@ -115,7 +118,7 @@
 }
 
 .early-booking__form input {
-  padding: 11px 16px;
+  padding: 14px 16px 11px 16px;
   background-color: $color-alice-blue;
   border: 0;
   margin-bottom: 20px;
@@ -164,10 +167,10 @@
 .early-booking__form input[type="checkbox"]:checked + span::before {
   position: absolute;
   content: "";
-  left: 6px;
-  top: 4px;
-  width: 6px;
-  height: 10px;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 9px;
   border: solid #101a56;
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
@@ -179,7 +182,7 @@
   line-height: 150%;
   padding-top: 15px;
   padding-bottom: 17px;
-  padding: 15px 10px 17px 10px;
+  padding: 10px 10px 12px 10px;
   background-color: $color-alice-blue;
   border: 0;
   text-align: center;

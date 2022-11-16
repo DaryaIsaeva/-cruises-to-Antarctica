@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 95px;
+  padding-top: 84px;
   padding-bottom: 120px;
 
   @include vp-1023 {
@@ -31,7 +31,7 @@
   font-size: 28px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   @include vp-1023 {
     font-size: 26px;
@@ -64,12 +64,11 @@
 .catalog__item {
   color: $color-alice-blue;
   background-color: $color-tangaroa;
-  padding: 35px 25px;
+  padding: 27px 25px 35px 25px;
   min-height: 386px;
   position: relative;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  row-gap: 25px;
+  display: flex;
+  flex-direction: column;
 
   &::before {
     position: absolute;
@@ -87,7 +86,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    bottom: 30px;
+    bottom: 25px;
     left: 30px;
   }
 }
@@ -165,7 +164,8 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
 }
 
 .catalog dl {
@@ -176,7 +176,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .catalog dd {
@@ -184,7 +184,7 @@
   font-size: 14px;
   line-height: 140%;
   margin-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .catalog dd:last-of-type {
@@ -196,7 +196,7 @@
   font-size: 14px;
   line-height: 150%;
   display: block;
-  padding: 14px 10px 15px 10px;
+  padding: 10px;
   text-align: center;
   margin-top: auto;
   background-color: $color-alice-blue;

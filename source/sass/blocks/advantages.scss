@@ -1,5 +1,7 @@
 .advantages {
-  padding: 120px 0;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-color: #d0e3ed;
   background-image: url("../img/background/advantages-background-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +22,7 @@
   font-size: 28px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
 
   @include vp-1023 {
@@ -52,7 +54,7 @@
 }
 
 .advantages__item {
-  padding: 87px 30px 50px 30px;
+  padding: 80px 30px 48px 30px;
   background-color: $color-alice-blue;
   position: relative;
 
@@ -107,7 +109,7 @@
   font-size: 18px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   @include vp-1023 {
     line-height: 140%;
