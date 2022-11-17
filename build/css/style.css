@@ -977,7 +977,7 @@ button,
 }
 
 .advantages__item {
-  padding: 80px 30px 48px 30px;
+  padding: 80px 30px 44px 30px;
   background-color: #f9fbfd;
   position: relative;
 }
@@ -1063,7 +1063,7 @@ button,
 .catalog__item {
   color: #f9fbfd;
   background-color: #011c40;
-  padding: 27px 25px 35px 25px;
+  padding: 29px 25px 35px 25px;
   min-height: 386px;
   position: relative;
   display: -webkit-box;
@@ -1091,7 +1091,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  bottom: 25px;
+  bottom: 22px;
   left: 30px;
 }
 
@@ -1725,7 +1725,8 @@ button,
   }
 
   .catalog {
-    padding: 100px 0;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
   .catalog__container {
@@ -1734,11 +1735,22 @@ button,
 
   .catalog h2 {
     font-size: 26px;
+    margin-bottom: 49px;
   }
 
   .catalog__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog__item::after {
+    bottom: 27px;
+    left: 35px;
+  }
+
+  .catalog__item {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .early-booking {
@@ -2021,7 +2033,8 @@ button,
   }
 
   .catalog {
-    padding: 65px 0;
+    padding-top: 56px;
+    padding-bottom: 67px;
   }
 
   .catalog__container {
@@ -2030,7 +2043,7 @@ button,
 
   .catalog h2 {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .catalog__list {
@@ -2041,6 +2054,16 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .catalog__item::after {
+    bottom: 16px;
+    left: 25px;
+  }
+
+  .catalog__item {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .early-booking {

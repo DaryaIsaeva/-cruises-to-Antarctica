@@ -3,11 +3,13 @@
   padding-bottom: 120px;
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding-top: 56px;
+    padding-bottom: 67px;
   }
 }
 
@@ -35,11 +37,12 @@
 
   @include vp-1023 {
     font-size: 26px;
+    margin-bottom: 49px;
   }
 
   @include vp-767 {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -64,7 +67,7 @@
 .catalog__item {
   color: $color-alice-blue;
   background-color: $color-tangaroa;
-  padding: 27px 25px 35px 25px;
+  padding: 29px 25px 35px 25px;
   min-height: 386px;
   position: relative;
   display: flex;
@@ -86,8 +89,28 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    bottom: 25px;
+    bottom: 22px;
     left: 30px;
+
+    @include vp-1023 {
+      bottom: 27px;
+      left: 35px;
+    }
+
+    @include vp-767 {
+      bottom: 16px;
+      left: 25px;
+    }
+  }
+
+  @include vp-1023 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
