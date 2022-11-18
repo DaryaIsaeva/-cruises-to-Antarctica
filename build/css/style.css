@@ -1082,6 +1082,7 @@ button,
   height: 100%;
   top: 0;
   left: 0;
+  background-color: #011c40;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1096,7 +1097,7 @@ button,
 }
 
 .catalog__item--astoria::before {
-  background-image: url("../img/content/astoria.jpg");
+  background-image: url("../img/catalog/astoria.jpg");
 }
 
 .catalog__item--astoria::after {
@@ -1104,7 +1105,7 @@ button,
 }
 
 .catalog__item--eline::before {
-  background-image: url("../img/content/minion-1.jpg");
+  background-image: url("../img/catalog/minion-1.jpg");
 }
 
 .catalog__item--eline::after {
@@ -1112,7 +1113,7 @@ button,
 }
 
 .catalog__item--atlantis::before {
-  background-image: url("../img/content/atlantis.jpg");
+  background-image: url("../img/catalog/atlantis.jpg");
 }
 
 .catalog__item--atlantis::after {
@@ -1120,7 +1121,7 @@ button,
 }
 
 .catalog__item--odissey::before {
-  background-image: url("../img/content/odissey.jpg");
+  background-image: url("../img/catalog/odissey.jpg");
 }
 
 .catalog__item--odissey::after {
@@ -1128,7 +1129,7 @@ button,
 }
 
 .catalog__item--olimpia::before {
-  background-image: url("../img/content/odissey.jpg");
+  background-image: url("../img/catalog/odissey.jpg");
 }
 
 .catalog__item--olimpia::after {
@@ -1136,7 +1137,7 @@ button,
 }
 
 .catalog__item--aurora::before {
-  background-image: url("../img/content/aurora.jpg");
+  background-image: url("../img/catalog/aurora.jpg");
 }
 
 .catalog__item--aurora::after {
@@ -1144,7 +1145,7 @@ button,
 }
 
 .catalog__item--leonor::before {
-  background-image: url("../img/content/leonor.jpg");
+  background-image: url("../img/catalog/leonor.jpg");
 }
 
 .catalog__item--leonor::after {
@@ -1152,7 +1153,7 @@ button,
 }
 
 .catalog__item--minion::before {
-  background-image: url("../img/content/minion-1.jpg");
+  background-image: url("../img/catalog/minion-1.jpg");
 }
 
 .catalog__item--minion::after {
@@ -1213,6 +1214,7 @@ button,
 
 .early-booking {
   padding: 48px 0;
+  background-color: #c9e9ff;
   background-image: url("../img/background/booking-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1443,7 +1445,7 @@ button,
 
 .contacts p {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -1478,11 +1480,13 @@ button,
 .contacts__item--address::before {
   height: 22px;
   background-image: url("../img/svg/pin.svg");
+  top: 5px;
 }
 
 .contacts__item--phone::before {
   height: 18px;
   background-image: url("../img/svg/phone.svg");
+  top: 2px;
 }
 
 .contacts__item a {
@@ -1832,6 +1836,18 @@ button,
     height: 335px;
   }
 
+  .contacts__text {
+    margin-top: -3px;
+  }
+
+  .contacts p {
+    margin-bottom: 28px;
+  }
+
+  .contacts__item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
   .footer-nav__logo img {
     width: 38px;
     height: 20px;
@@ -2143,7 +2159,8 @@ button,
   }
 
   .contacts {
-    padding: 65px 0;
+    padding-top: 57px;
+    padding-bottom: 64px;
   }
 
   .contacts__container {
@@ -2172,7 +2189,12 @@ button,
   }
 
   .contacts__text {
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 38px;
+  }
+
+  .contacts p {
+    margin-bottom: 27px;
   }
 
   .footer-nav {

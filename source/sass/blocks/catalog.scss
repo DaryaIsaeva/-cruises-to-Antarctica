@@ -80,6 +80,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    background-color: $color-tangaroa;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -115,7 +116,7 @@
 }
 
 .catalog__item--astoria::before {
-  background-image: url("../img/content/astoria.jpg");
+  background-image: url("../img/catalog/astoria.jpg");
 }
 
 .catalog__item--astoria::after {
@@ -123,7 +124,7 @@
 }
 
 .catalog__item--eline::before {
-  background-image: url("../img/content/minion-1.jpg");
+  background-image: url("../img/catalog/minion-1.jpg");
 }
 
 .catalog__item--eline::after {
@@ -131,7 +132,7 @@
 }
 
 .catalog__item--atlantis::before {
-  background-image: url("../img/content/atlantis.jpg");
+  background-image: url("../img/catalog/atlantis.jpg");
 }
 
 .catalog__item--atlantis::after {
@@ -139,7 +140,7 @@
 }
 
 .catalog__item--odissey::before {
-  background-image: url("../img/content/odissey.jpg");
+  background-image: url("../img/catalog/odissey.jpg");
 }
 
 .catalog__item--odissey::after {
@@ -147,7 +148,7 @@
 }
 
 .catalog__item--olimpia::before {
-  background-image: url("../img/content/odissey.jpg");
+  background-image: url("../img/catalog/odissey.jpg");
 }
 
 .catalog__item--olimpia::after {
@@ -155,7 +156,7 @@
 }
 
 .catalog__item--aurora::before {
-  background-image: url("../img/content/aurora.jpg");
+  background-image: url("../img/catalog/aurora.jpg");
 }
 
 .catalog__item--aurora::after {
@@ -163,7 +164,7 @@
 }
 
 .catalog__item--leonor::before {
-  background-image: url("../img/content/leonor.jpg");
+  background-image: url("../img/catalog/leonor.jpg");
 }
 
 .catalog__item--leonor::after {
@@ -171,7 +172,7 @@
 }
 
 .catalog__item--minion::before {
-  background-image: url("../img/content/minion-1.jpg");
+  background-image: url("../img/catalog/minion-1.jpg");
 }
 
 .catalog__item--minion::after {
