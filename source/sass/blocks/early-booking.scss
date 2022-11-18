@@ -1,17 +1,18 @@
 .early-booking {
-  padding-top: 48px;
-  padding-bottom: 50px;
+  padding: 48px 0;
   background-image: url("../img/background/booking-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding-top: 92px;
+    padding-bottom: 100px;
     background-image: url("../img/background/booking-background-tablet.jpg");
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding-top: 60px;
+    padding-bottom: 67px;
     background-image: url("../img/background/booking-background-mobile.jpg");
   }
 }
@@ -39,10 +40,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -7px;
+  margin-top: -3px;
 
   @include vp-1023 {
     align-items: center;
+    margin-bottom: 52px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
   }
 }
 
@@ -51,17 +57,18 @@
   font-size: 40px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
   @include vp-1023 {
     font-size: 34px;
-    margin-bottom: 25px;
+    margin-bottom: 4px;
   }
 
   @include vp-767 {
     font-size: 24px;
     line-height: 130%;
     text-align: center;
+    margin-bottom: 14px;
   }
 }
 
@@ -74,13 +81,11 @@
 
   @include vp-1023 {
     text-align: center;
-    margin-bottom: 60px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 140%;
-    margin-bottom: 40px;
     max-width: 257px;
   }
 }
@@ -96,11 +101,13 @@
 
   @include vp-1023 {
     max-width: 403px;
+    padding-top: 43px;
   }
 
   @include vp-767 {
     max-width: 100%;
     padding: 40px 30px;
+    padding-top: 35px;
   }
 }
 
@@ -112,13 +119,18 @@
   margin-top: 0;
   margin-bottom: 26px;
 
+  @include vp-1023 {
+    margin-bottom: 28px;
+  }
+
   @include vp-767 {
     line-height: 140%;
+    text-align: center;
   }
 }
 
 .early-booking__form input {
-  padding: 14px 16px 11px 16px;
+  padding: 14px 18px 11px 18px;
   background-color: $color-alice-blue;
   border: 0;
   margin-bottom: 20px;
@@ -129,13 +141,22 @@
     line-height: 150%;
     color: rgba(1, 28, 64, 0.7);
   }
+
+  @include vp-1023 {
+    padding: 13px 16px 11px 16px;
+  }
 }
 
 .early-booking__form label {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 30px;
   cursor: pointer;
+
+  @include vp-767 {
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
 }
 
 .early-booking__form span {
@@ -154,11 +175,11 @@
   width: 18px;
   height: 18px;
   background-color: $color-alice-blue;
-  margin-right: 5px;
+  margin-right: 6px;
   position: relative;
 
   @include vp-767 {
-    width: 20px;
+    width: 26px;
     height: 20px;
     margin-right: 8px;
   }
@@ -174,17 +195,27 @@
   border: solid #101a56;
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
+
+  @include vp-1023 {
+    top: 4px;
+  }
+
+  @include vp-767 {
+    top: 5px;
+  }
 }
 
 .early-booking__form button {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  padding-top: 15px;
-  padding-bottom: 17px;
-  padding: 10px 10px 12px 10px;
+  padding: 12px;
   background-color: $color-alice-blue;
   border: 0;
   text-align: center;
   cursor: pointer;
+
+  @include vp-767 {
+    padding: 10px;
+  }
 }

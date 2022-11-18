@@ -179,7 +179,9 @@
 }
 
 .catalog__item:hover::before,
-.catalog__item:hover::after {
+.catalog__item:hover::after,
+.catalog__item:focus-within::before,
+.catalog__item:focus-within::after {
   display: none;
 }
 
