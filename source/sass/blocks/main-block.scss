@@ -14,22 +14,18 @@
   }
 
   @include vp-767 {
+    min-height: 500px;
     padding-top: 175px;
     padding-bottom: 177px;
+    box-sizing: border-box;
     background-image: url("../img/background/main-background-mobile.jpg");
   }
 
   @media (min-resolution: 2dppx) {
-    @include vp-767 {
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/background/main-background-mobile@2x.jpg");
-      }
-    }
+    background-image: url("../img/background/main-background-mobile@2x.jpg");
 
-    @include vp-1023 {
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/background/main-background-tablet@2x.jpg");
-      }
+    @media (min-width: 768px) {
+      background-image: url("../img/background/main-background-tablet@2x.jpg");
     }
 
     @media (min-width: 1024px) {

@@ -3,9 +3,11 @@ import {initModals} from './modules/modals/init-modals';
 import {initMobileMenu} from './modules/init-mobile-menu';
 import {addSmoothSckroll} from './modules/skroll';
 
-const mainWrapper = document.querySelector('.wrapper');
+const mainWrapper = document.querySelector('[data-wrapper]');
 
-mainWrapper.classList.remove('no-js');
+if (mainWrapper) {
+  mainWrapper.classList.remove('no-js');
+}
 
 // ---------------------------------
 

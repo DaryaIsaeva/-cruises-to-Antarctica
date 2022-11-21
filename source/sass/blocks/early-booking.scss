@@ -132,6 +132,7 @@
 
 .early-booking__form input {
   padding: 14px 18px 11px 18px;
+  color: $color-tangaroa;
   background-color: $color-alice-blue;
   border: 0;
   margin-bottom: 20px;
@@ -145,6 +146,14 @@
 
   @include vp-1023 {
     padding: 13px 16px 11px 16px;
+  }
+
+  &:hover::placeholder {
+    color: $color-tangaroa;
+  }
+
+  &:focus::placeholder {
+    color: $color-tangaroa;
   }
 }
 
@@ -186,6 +195,11 @@
   }
 }
 
+.early-booking__form input[type="checkbox"]:focus + span {
+  background-color: $color-tangaroa;
+  border: 1px solid $color-alice-blue;
+}
+
 .early-booking__form input[type="checkbox"]:checked + span::before {
   position: absolute;
   content: "";
@@ -206,6 +220,24 @@
   }
 }
 
+.early-booking__form input[type="checkbox"]:checked:focus + span::before {
+  border-color: $color-alice-blue;
+  top: 2px;
+  left: 6px;
+
+  @include vp-1023 {
+    top: 3px;
+  }
+
+  @include vp-767 {
+    top: 4px;
+  }
+}
+
+.early-booking__checkbox:hover {
+  opacity: 0.7;
+}
+
 .early-booking__form button {
   font-weight: 600;
   font-size: 14px;
@@ -215,6 +247,15 @@
   border: 0;
   text-align: center;
   cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
 
   @include vp-767 {
     padding: 10px;
