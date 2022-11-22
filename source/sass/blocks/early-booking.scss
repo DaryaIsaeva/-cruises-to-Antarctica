@@ -1,31 +1,32 @@
 .early-booking {
   padding: 48px 0;
   background-color: #c9e9ff;
-  background-image: url("/img/background/booking-background-desktop.jpg");
+  background-image: url("../img/background/booking-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("/img/background/booking-background-desktop@2x.jpg");
+    background-image: url("../img/background/booking-background-desktop@2x.jpg");
   }
 
   @include vp-1023 {
     padding-top: 92px;
     padding-bottom: 100px;
-    background-image: url("/img/background/booking-background-tablet.jpg");
+    background-image: url("../img/background/booking-background-tablet.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background/booking-background-tablet@2x.jpg");
+      background-image: url("../img/background/booking-background-tablet@2x.jpg");
     }
   }
 
   @include vp-767 {
     padding-top: 60px;
     padding-bottom: 67px;
-    background-image: url("/img/background/booking-background-mobile.jpg");
+    background-image: url("../img/background/booking-background-mobile.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background/booking-background-mobile@2x.jpg");
+      background-image: url("../img/background/booking-background-mobile@2x.jpg");
     }
   }
 }

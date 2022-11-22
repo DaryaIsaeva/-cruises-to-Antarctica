@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initMobileMenu} from './modules/init-mobile-menu';
-import {addSmoothSckroll} from './modules/skroll';
+import {addSmoothScroll} from './modules/scroll';
 
 const mainWrapper = document.querySelector('[data-wrapper]');
 
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   initMobileMenu();
-  addSmoothSckroll();
+  addSmoothScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

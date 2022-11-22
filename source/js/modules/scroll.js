@@ -1,8 +1,8 @@
 const ANIMATION_TIME = 500;
 const FRAMES_COUNT = 20;
-const anchors = [].slice.call(document.querySelectorAll('[data-skroll]'));
+const anchors = [].slice.call(document.querySelectorAll('[data-scroll]'));
 
-const addSmoothSckroll = () => {
+const addSmoothScroll = () => {
   anchors.forEach((item) => {
     item.addEventListener('click', (evt) => {
       evt.preventDefault();
@@ -20,4 +20,4 @@ const addSmoothSckroll = () => {
   });
 };
 
-export {addSmoothSckroll};
+export {addSmoothScroll};

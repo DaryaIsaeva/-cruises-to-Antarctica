@@ -1,23 +1,23 @@
 .main-block {
   padding-top: 270px;
   padding-bottom: 285px;
-  background: url("/img/background/main-background-desktop.jpg"), $color-tangaroa;
+  background: url("../img/background/main-background-desktop.jpg"), $color-tangaroa;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("/img/background/main-background-desktop@2x.jpg");
+    background-image: url("../img/background/main-background-desktop@2x.jpg");
   }
 
   @include vp-1023 {
     padding-top: 268px;
     padding-bottom: 275px;
-    background-image: url("/img/background/main-background-tablet.jpg");
+    background-image: url("../img/background/main-background-tablet.jpg");
     background-position: center;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background/main-background-tablet@2x.jpg");
+      background-image: url("../img/background/main-background-tablet@2x.jpg");
     }
   }
 
@@ -26,11 +26,11 @@
     padding-top: 175px;
     padding-bottom: 177px;
     box-sizing: border-box;
-    background-image: url("/img/background/main-background-mobile.jpg");
+    background-image: url("../img/background/main-background-mobile.jpg");
     background-position: bottom;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background/main-background-mobile@2x.jpg");
+      background-image: url("../img/background/main-background-mobile@2x.jpg");
     }
   }
 }
