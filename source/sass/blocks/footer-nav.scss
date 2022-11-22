@@ -13,7 +13,9 @@
   height: fit-content;
 }
 
-.footer-nav__logo img {
+.footer-nav__logo svg {
+  fill: $color-alice-blue;
+
   @include vp-1023 {
     width: 38px;
     height: 20px;

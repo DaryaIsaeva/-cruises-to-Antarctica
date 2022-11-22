@@ -65,44 +65,19 @@
 }
 
 .catalog__item {
+  position: relative;
+}
+
+.catalog__content {
   color: $color-alice-blue;
   background-color: $color-tangaroa;
   padding: 29px 25px 35px 25px;
+  width: 100%;
   min-height: 386px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: $color-tangaroa;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &::after {
-    position: absolute;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    bottom: 22px;
-    left: 30px;
-
-    @include vp-1023 {
-      bottom: 27px;
-      left: 35px;
-    }
-
-    @include vp-767 {
-      bottom: 16px;
-      left: 25px;
-    }
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 
   @include vp-1023 {
     padding-left: 35px;
@@ -115,75 +90,23 @@
   }
 }
 
-.catalog__item--astoria::before {
-  background-image: url("../img/catalog/astoria.jpg");
+.catalog__item:hover .catalog__content,
+.catalog__item:focus-within .catalog__content {
+  display: flex;
+  flex-direction: column;
 }
 
-.catalog__item--astoria::after {
-  content: "Круиз “Астория”";
-}
+.catalog__image img {
+  width: 260px;
+  height: 386px;
 
-.catalog__item--eline::before {
-  background-image: url("../img/catalog/minion-1.jpg");
-}
+  @include vp-1023 {
+    width: 309px;
+  }
 
-.catalog__item--eline::after {
-  content: "Круиз “Элайн”";
-}
-
-.catalog__item--atlantis::before {
-  background-image: url("../img/catalog/atlantis.jpg");
-}
-
-.catalog__item--atlantis::after {
-  content: "Круиз “Атлантис”";
-}
-
-.catalog__item--odissey::before {
-  background-image: url("../img/catalog/odissey.jpg");
-}
-
-.catalog__item--odissey::after {
-  content: "Круиз “Одиссей”";
-}
-
-.catalog__item--olimpia::before {
-  background-image: url("../img/catalog/odissey.jpg");
-}
-
-.catalog__item--olimpia::after {
-  content: "Круиз “Олимпия”";
-}
-
-.catalog__item--aurora::before {
-  background-image: url("../img/catalog/aurora.jpg");
-}
-
-.catalog__item--aurora::after {
-  content: "Круиз “Аврора”";
-}
-
-.catalog__item--leonor::before {
-  background-image: url("../img/catalog/leonor.jpg");
-}
-
-.catalog__item--leonor::after {
-  content: "Круиз “Леонор”";
-}
-
-.catalog__item--minion::before {
-  background-image: url("../img/catalog/minion-1.jpg");
-}
-
-.catalog__item--minion::after {
-  content: "Круиз “Минион - 1”";
-}
-
-.catalog__item:hover::before,
-.catalog__item:hover::after,
-.catalog__item:focus-within::before,
-.catalog__item:focus-within::after {
-  display: none;
+  @include vp-767 {
+    width: 270px;
+  }
 }
 
 .catalog h3 {
@@ -192,6 +115,27 @@
   line-height: 150%;
   margin-top: 0;
   margin-bottom: 14px;
+}
+
+.catalog__image {
+  position: relative;
+}
+
+.catalog__image h3 {
+  position: absolute;
+  left: 30px;
+  bottom: 7px;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    left: 35px;
+    bottom: 13px;
+  }
+
+  @include vp-767 {
+    left: 25px;
+    bottom: 4px;
+  }
 }
 
 .catalog dl {

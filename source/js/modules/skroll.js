@@ -1,6 +1,6 @@
 const ANIMATION_TIME = 500;
 const FRAMES_COUNT = 20;
-const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
+const anchors = [].slice.call(document.querySelectorAll('[data-skroll]'));
 
 const addSmoothSckroll = () => {
   anchors.forEach((item) => {

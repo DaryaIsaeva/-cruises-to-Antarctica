@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -645,145 +643,6 @@ button,
   padding: 0 103px;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.btn.focus-visible:focus {
-  opacity: 0.8;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .header {
   position: absolute;
   z-index: 1;
@@ -807,6 +666,10 @@ button,
   display: block;
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+
+.main-nav__logo svg {
+  fill: #f9fbfd;
 }
 
 .main-nav__list {
@@ -840,13 +703,9 @@ button,
   border-bottom: 1px solid #f9fbfd;
 }
 
-.main-nav__mobile-menu-logo {
-  display: none;
-}
-
 .main-nav__toggle {
   background-color: transparent;
-  background-image: url("../img/svg/icon-open.svg");
+  background-image: url("/img/svg/icon-open.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 24px;
@@ -859,10 +718,7 @@ button,
 .main-block {
   padding-top: 270px;
   padding-bottom: 285px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(97%, #011c40), to(#f9fbfd));
-  background: -o-linear-gradient(#011c40 97%, #f9fbfd 100%);
-  background: linear-gradient(#011c40 97%, #f9fbfd 100%);
-  background-image: url("../img/background/main-background-desktop.jpg");
+  background: url("/img/background/main-background-desktop.jpg"), #011c40;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -947,7 +803,7 @@ button,
   padding-top: 110px;
   padding-bottom: 120px;
   background-color: #d0e3ed;
-  background-image: url("../img/background/advantages-background-desktop.png");
+  background-image: url("/img/background/advantages-background-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -990,17 +846,17 @@ button,
 
 .advantages__item--ship::before {
   width: 27px;
-  background-image: url("../img/svg/ship.svg");
+  background-image: url("/img/svg/ship.svg");
 }
 
 .advantages__item--all-inclusive::before {
   width: 38px;
-  background-image: url("../img/svg/all-inclusive.svg");
+  background-image: url("/img/svg/all-inclusive.svg");
 }
 
 .advantages__item--zodiac::before {
   width: 44px;
-  background-image: url("../img/svg/zodiac.svg");
+  background-image: url("/img/svg/zodiac.svg");
 }
 
 .advantages h3 {
@@ -1057,11 +913,23 @@ button,
 }
 
 .catalog__item {
+  position: relative;
+}
+
+.catalog__content {
   color: #f9fbfd;
   background-color: #011c40;
   padding: 29px 25px 35px 25px;
+  width: 100%;
   min-height: 386px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.catalog__item:hover .catalog__content,
+.catalog__item:focus-within .catalog__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,96 +939,9 @@ button,
   flex-direction: column;
 }
 
-.catalog__item::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #011c40;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.catalog__item::after {
-  position: absolute;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  bottom: 22px;
-  left: 30px;
-}
-
-.catalog__item--astoria::before {
-  background-image: url("../img/catalog/astoria.jpg");
-}
-
-.catalog__item--astoria::after {
-  content: "Круиз “Астория”";
-}
-
-.catalog__item--eline::before {
-  background-image: url("../img/catalog/minion-1.jpg");
-}
-
-.catalog__item--eline::after {
-  content: "Круиз “Элайн”";
-}
-
-.catalog__item--atlantis::before {
-  background-image: url("../img/catalog/atlantis.jpg");
-}
-
-.catalog__item--atlantis::after {
-  content: "Круиз “Атлантис”";
-}
-
-.catalog__item--odissey::before {
-  background-image: url("../img/catalog/odissey.jpg");
-}
-
-.catalog__item--odissey::after {
-  content: "Круиз “Одиссей”";
-}
-
-.catalog__item--olimpia::before {
-  background-image: url("../img/catalog/odissey.jpg");
-}
-
-.catalog__item--olimpia::after {
-  content: "Круиз “Олимпия”";
-}
-
-.catalog__item--aurora::before {
-  background-image: url("../img/catalog/aurora.jpg");
-}
-
-.catalog__item--aurora::after {
-  content: "Круиз “Аврора”";
-}
-
-.catalog__item--leonor::before {
-  background-image: url("../img/catalog/leonor.jpg");
-}
-
-.catalog__item--leonor::after {
-  content: "Круиз “Леонор”";
-}
-
-.catalog__item--minion::before {
-  background-image: url("../img/catalog/minion-1.jpg");
-}
-
-.catalog__item--minion::after {
-  content: "Круиз “Минион - 1”";
-}
-
-.catalog__item:hover::before,
-.catalog__item:hover::after,
-.catalog__item:focus-within::before,
-.catalog__item:focus-within::after {
-  display: none;
+.catalog__image img {
+  width: 260px;
+  height: 386px;
 }
 
 .catalog h3 {
@@ -1169,6 +950,17 @@ button,
   line-height: 150%;
   margin-top: 0;
   margin-bottom: 14px;
+}
+
+.catalog__image {
+  position: relative;
+}
+
+.catalog__image h3 {
+  position: absolute;
+  left: 30px;
+  bottom: 7px;
+  color: #f9fbfd;
 }
 
 .catalog dl {
@@ -1223,7 +1015,7 @@ button,
 .early-booking {
   padding: 48px 0;
   background-color: #c9e9ff;
-  background-image: url("../img/background/booking-background-desktop.jpg");
+  background-image: url("/img/background/booking-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1479,7 +1271,7 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  background-image: url("../img/background/map-desktop.jpg");
+  background-image: url("/img/background/map-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 306px;
@@ -1489,7 +1281,7 @@ button,
 .contacts__map::before {
   position: absolute;
   content: "";
-  background-image: url("../img/svg/pin.svg");
+  background-image: url("/img/svg/pin.svg");
   width: 18px;
   height: 22px;
   top: 217px;
@@ -1534,41 +1326,49 @@ button,
 }
 
 .contacts__item {
-  position: relative;
-  padding-left: 28px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-}
-
-.contacts__item::before,
-.contacts__item ::after {
-  position: absolute;
-  content: "";
-  width: 18px;
-  left: 0;
 }
 
 .contacts__item:not(:last-of-type) {
   margin-bottom: 22px;
 }
 
-.contacts__item--address::before {
-  height: 22px;
-  background-image: url("../img/svg/pin.svg");
-  top: 5px;
-}
-
-.contacts__item--phone::before {
-  height: 18px;
-  background-image: url("../img/svg/phone.svg");
-  top: 2px;
-}
-
 .contacts__item a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+}
+
+.contacts__item--address {
+  position: relative;
+  padding-left: 28px;
+}
+
+.contacts__item--address::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  left: 0;
+  height: 22px;
+  background-image: url("/img/svg/pin.svg");
+  top: 5px;
+}
+
+.contacts__item--phone a {
+  position: relative;
+  padding-left: 28px;
+}
+
+.contacts__item--phone a::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  left: 0;
+  height: 18px;
+  background-image: url("/img/svg/phone.svg");
+  top: 2px;
 }
 
 .footer {
@@ -1586,6 +1386,10 @@ button,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.footer-nav__logo svg {
+  fill: #f9fbfd;
 }
 
 .footer-nav__list {
@@ -1656,13 +1460,21 @@ button,
   display: block;
 }
 
+.open-mobile-menu .main-block__container {
+  padding-left: 35px;
+}
+
 .is-open .main-nav__toggle {
   position: absolute;
-  background-image: url("../img/svg/icon-close.svg");
+  background-image: url("/img/svg/icon-close.svg");
   width: 13px;
   height: 13px;
   right: 12px;
   top: 22px;
+}
+
+.is-open svg {
+  fill: #011c40;
 }
 
 /* @mixin hover-focus {
@@ -1706,26 +1518,6 @@ button,
   }
 */
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
-  .main-block {
-    background-image: url("../img/background/main-background-tablet@2x.jpg");
-  }
-
-  .contacts__map {
-    background-image: url("../img/background/map-tablet@2x.jpg");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
-  .main-block {
-    background-image: url("../img/background/main-background-desktop@2x.jpg");
-  }
-
-  .contacts__map {
-    background-image: url("../img/background/map-desktop@2x.jpg");
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
@@ -1735,7 +1527,7 @@ button,
     padding: 30px 0;
   }
 
-  .main-nav__logo img {
+  .main-nav__logo svg {
     width: 38px;
     height: 20px;
   }
@@ -1754,7 +1546,8 @@ button,
   .main-block {
     padding-top: 268px;
     padding-bottom: 275px;
-    background-image: url("../img/background/main-background-tablet.jpg");
+    background-image: url("/img/background/main-background-tablet.jpg");
+    background-position: center;
   }
 
   .main-block__container {
@@ -1805,7 +1598,7 @@ button,
   .advantages {
     padding-top: 90px;
     padding-bottom: 100px;
-    background-image: url("../img/background/advantages-background-tablet.png");
+    background-image: url("/img/background/advantages-background-tablet.png");
   }
 
   .advantages h2 {
@@ -1865,20 +1658,24 @@ button,
     grid-template-columns: 1fr 1fr;
   }
 
-  .catalog__item::after {
-    bottom: 27px;
-    left: 35px;
-  }
-
-  .catalog__item {
+  .catalog__content {
     padding-left: 35px;
     padding-right: 35px;
+  }
+
+  .catalog__image img {
+    width: 309px;
+  }
+
+  .catalog__image h3 {
+    left: 35px;
+    bottom: 13px;
   }
 
   .early-booking {
     padding-top: 92px;
     padding-bottom: 100px;
-    background-image: url("../img/background/booking-background-tablet.jpg");
+    background-image: url("/img/background/booking-background-tablet.jpg");
   }
 
   .early-booking__container {
@@ -1945,7 +1742,7 @@ button,
   }
 
   .contacts__map {
-    background-image: url("../img/background/map-tablet.jpg");
+    background-image: url("/img/background/map-tablet.jpg");
     height: 335px;
   }
 
@@ -1970,7 +1767,7 @@ button,
     margin-bottom: 20px;
   }
 
-  .footer-nav__logo img {
+  .footer-nav__logo svg {
     width: 38px;
     height: 20px;
   }
@@ -2002,22 +1799,27 @@ button,
   }
 }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .main-block {
+    background-image: url("/img/background/main-background-tablet@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("/img/background/advantages-background-tablet@2x.png");
+  }
+
+  .early-booking {
+    background-image: url("/img/background/booking-background-tablet@2x.jpg");
+  }
+
+  .contacts__map {
+    background-image: url("/img/background/map-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
-  }
-
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
   }
 
   .header__mobile-menu-container {
@@ -2030,7 +1832,7 @@ button,
     padding: 20px 0;
   }
 
-  .main-nav__logo img {
+  .main-nav__logo svg {
     width: 42px;
     height: 22px;
   }
@@ -2049,7 +1851,8 @@ button,
     padding-bottom: 177px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-image: url("../img/background/main-background-mobile.jpg");
+    background-image: url("/img/background/main-background-mobile.jpg");
+    background-position: bottom;
   }
 
   .main-block__container {
@@ -2102,7 +1905,7 @@ button,
   .advantages {
     padding-top: 55px;
     padding-bottom: 65px;
-    background-image: url("../img/background/advantages-background-mobile.png");
+    background-image: url("/img/background/advantages-background-mobile.png");
   }
 
   .advantages h2 {
@@ -2157,20 +1960,24 @@ button,
     flex-direction: column;
   }
 
-  .catalog__item::after {
-    bottom: 16px;
-    left: 25px;
-  }
-
-  .catalog__item {
+  .catalog__content {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .catalog__image img {
+    width: 270px;
+  }
+
+  .catalog__image h3 {
+    left: 25px;
+    bottom: 4px;
   }
 
   .early-booking {
     padding-top: 60px;
     padding-bottom: 67px;
-    background-image: url("../img/background/booking-background-mobile.jpg");
+    background-image: url("/img/background/booking-background-mobile.jpg");
   }
 
   .early-booking__container {
@@ -2250,7 +2057,7 @@ button,
   }
 
   .contacts__map {
-    background-image: url("../img/background/map-mobile.jpg");
+    background-image: url("/img/background/map-mobile.jpg");
     height: 316px;
   }
 
@@ -2281,7 +2088,7 @@ button,
     flex-direction: column;
   }
 
-  .footer-nav__logo img {
+  .footer-nav__logo svg {
     width: 42px;
     height: 22px;
     margin-bottom: 28px;
@@ -2330,8 +2137,8 @@ button,
     align-items: flex-start;
   }
 
-  .no-js .main-nav__logo {
-    display: none;
+  .no-js svg {
+    fill: #011c40;
   }
 
   .no-js .main-nav__list {
@@ -2344,10 +2151,6 @@ button,
     flex-direction: column;
     text-align: right;
     margin-top: -10px;
-  }
-
-  .no-js .main-nav__mobile-menu-logo {
-    display: block;
   }
 
   .no-js .main-nav__link {
@@ -2384,7 +2187,7 @@ button,
     flex-direction: column;
     padding: 20px 15px;
     background-color: #f9fbfd;
-    min-height: 568px;
+    height: 100vh;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-align: start;
@@ -2394,10 +2197,6 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
     position: relative;
-  }
-
-  .is-open .main-nav__logo {
-    display: none;
   }
 
   .is-open .main-nav__list {
@@ -2425,25 +2224,48 @@ button,
     border-color: #011c40;
   }
 
-  .is-open .main-nav__mobile-menu-logo {
-    display: block;
+  .is-open .main-nav__logo {
     padding: 0;
     margin-bottom: 33px;
   }
-}
 
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
+  .is-open .main-nav__logo:hover {
+    padding: 0;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .main-block {
-    background-image: url("../img/background/main-background-mobile@2x.jpg");
+    background-image: url("/img/background/main-background-mobile@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("/img/background/advantages-background-mobile@2x.png");
+  }
+
+  .early-booking {
+    background-image: url("/img/background/booking-background-mobile@2x.jpg");
   }
 
   .contacts__map {
-    background-image: url("../img/background/map-mobile@2x.jpg");
+    background-image: url("/img/background/map-mobile@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .main-block {
+    background-image: url("/img/background/main-background-desktop@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("/img/background/advantages-background-desktop@2x.png");
+  }
+
+  .early-booking {
+    background-image: url("/img/background/booking-background-desktop@2x.jpg");
+  }
+
+  .contacts__map {
+    background-image: url("/img/background/map-desktop@2x.jpg");
   }
 }

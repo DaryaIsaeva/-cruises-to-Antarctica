@@ -12,9 +12,9 @@
   }
 }
 
-.no-js .main-nav__logo {
+.no-js svg {
   @include vp-767 {
-    display: none;
+    fill: $color-tangaroa;
   }
 }
 
@@ -24,12 +24,6 @@
     flex-direction: column;
     text-align: right;
     margin-top: -10px;
-  }
-}
-
-.no-js .main-nav__mobile-menu-logo {
-  @include vp-767 {
-    display: block;
   }
 }
 
