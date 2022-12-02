@@ -705,7 +705,7 @@ button,
 
 .main-nav__toggle {
   background-color: transparent;
-  background-image: url("/img/svg/icon-open.svg");
+  background-image: url("../img/svg/icon-open.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 24px;
@@ -904,8 +904,11 @@ button,
 .catalog__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 260px);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -914,6 +917,7 @@ button,
 
 .catalog__item {
   position: relative;
+  overflow-y: scroll;
 }
 
 .catalog__content {
@@ -958,8 +962,8 @@ button,
 
 .catalog__image h3 {
   position: absolute;
-  left: 30px;
   bottom: 7px;
+  padding: 0 30px;
   color: #f9fbfd;
 }
 
@@ -993,7 +997,7 @@ button,
   display: block;
   padding: 10px;
   text-align: center;
-  margin-top: auto;
+  margin-top: 22px;
   background-color: #f9fbfd;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1022,14 +1026,14 @@ button,
 }
 
 .early-booking__container {
-  padding: 0 163px;
+  padding: 0 12%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 403px;
-  grid-template-columns: 1fr 403px;
-  -webkit-column-gap: 144px;
-  -moz-column-gap: 144px;
-  column-gap: 144px;
+  -ms-grid-columns: auto 403px;
+  grid-template-columns: auto 403px;
+  -webkit-column-gap: 10%;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
 }
 
 .early-booking__text {
@@ -1081,6 +1085,10 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
 }
 
 .early-booking__form p {
@@ -1176,14 +1184,12 @@ button,
 }
 
 .early-booking__form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
   margin-bottom: 30px;
   cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
 }
 
 .early-booking__form span {
@@ -1261,11 +1267,11 @@ button,
 .contacts__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 560px 1fr;
-  grid-template-columns: 560px 1fr;
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
 }
 
 .contacts__map {
@@ -1276,6 +1282,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   height: 306px;
+  max-width: 560px;
   position: relative;
 }
 
@@ -1292,7 +1299,8 @@ button,
 
 .contacts iframe {
   display: block;
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   height: inherit;
 }
 
@@ -1310,6 +1318,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-left: 60px;
 }
 
 .contacts p {
@@ -1377,9 +1386,10 @@ button,
 }
 
 .footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
   padding: 50px 0;
 }
 
@@ -1395,7 +1405,7 @@ button,
 
 .footer-nav__list {
   padding: 0;
-  margin: 10px auto 0 40px;
+  margin: 10px auto 0 3%;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
@@ -1655,8 +1665,7 @@ button,
   }
 
   .catalog__list {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 309px);
   }
 
   .catalog__content {
@@ -1669,8 +1678,8 @@ button,
   }
 
   .catalog__image h3 {
-    left: 35px;
     bottom: 13px;
+    padding: 0 35px;
   }
 
   .early-booking {
@@ -1758,6 +1767,7 @@ button,
 
   .contacts__text {
     margin-top: -3px;
+    padding: 0;
   }
 
   .contacts p {
@@ -1959,6 +1969,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: auto;
   }
 
   .catalog__content {
@@ -1971,8 +1982,8 @@ button,
   }
 
   .catalog__image h3 {
-    left: 25px;
     bottom: 4px;
+    padding: 0 25px;
   }
 
   .early-booking {
@@ -2014,9 +2025,6 @@ button,
   }
 
   .early-booking__form label {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
     margin-bottom: 28px;
   }
 
@@ -2025,7 +2033,7 @@ button,
   }
 
   .early-booking__form input[type=checkbox] + span {
-    width: 26px;
+    width: 20px;
     height: 20px;
     margin-right: 8px;
   }
@@ -2083,6 +2091,9 @@ button,
   .footer-nav {
     padding-top: 40px;
     padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

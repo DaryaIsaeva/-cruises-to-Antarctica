@@ -13,8 +13,8 @@
 
 .contacts__container {
   display: grid;
-  grid-template-columns: 560px 1fr;
-  column-gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
 
   @include vp-1023 {
     grid-template-columns: 324px 1fr;
@@ -33,6 +33,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 306px;
+  max-width: 560px;
   position: relative;
 
   @media (min-resolution: $retina-dppx) {
@@ -81,7 +82,8 @@
 
 .contacts iframe {
   display: block;
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   height: inherit;
 
   @include vp-1023 {
@@ -98,9 +100,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 60px;
 
   @include vp-1023 {
     margin-top: -3px;
+    padding: 0;
   }
 
   @include vp-767 {

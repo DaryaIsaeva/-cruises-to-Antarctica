@@ -10,12 +10,19 @@ const onMainNavLinkClick = () => {
   mainNav.classList.remove('is-open');
   mainWrapper.classList.remove('open-mobile-menu');
   headerContainer.classList.remove('header__mobile-menu-container');
+  document.body.classList.remove('scroll-lock');
 };
 
 const toggleMenu = () => {
   mainNav.classList.toggle('is-open');
   mainWrapper.classList.toggle('open-mobile-menu');
   headerContainer.classList.toggle('header__mobile-menu-container');
+
+  if (mainNav.classList.contains('is-open')) {
+    document.body.classList.add('scroll-lock');
+  } else {
+    document.body.classList.remove('scroll-lock');
+  }
 };
 
 const onEscKeydown = (evt) => {
