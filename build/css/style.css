@@ -755,8 +755,8 @@ button,
 .about-cruises__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 560px;
-  grid-template-columns: 1fr 560px;
+  -ms-grid-columns: 512px 1fr;
+  grid-template-columns: 512px 1fr;
   -webkit-column-gap: 88px;
   -moz-column-gap: 88px;
   column-gap: 88px;
@@ -904,7 +904,8 @@ button,
 .catalog__list {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -995,7 +996,7 @@ button,
   font-size: 14px;
   line-height: 150%;
   display: block;
-  padding: 10px;
+  padding: 10px 3px;
   text-align: center;
   margin-top: 22px;
   background-color: #f9fbfd;
@@ -1666,16 +1667,22 @@ button,
   }
 
   .catalog__list {
-    grid-template-columns: repeat(auto-fill, 309px);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .catalog__content {
     padding-left: 35px;
     padding-right: 35px;
+    width: 100%;
+    height: 100%;
   }
 
   .catalog__image img {
-    width: 309px;
+    width: 100%;
+    min-width: 309px;
+    height: auto;
+    min-height: 386px;
   }
 
   .catalog__image h3 {
@@ -1970,16 +1977,20 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   .catalog__content {
     padding-left: 25px;
     padding-right: 25px;
+    min-width: 270px;
+    max-width: 500px;
   }
 
   .catalog__image img {
-    width: 270px;
+    min-width: 270px;
+    max-width: 500px;
   }
 
   .catalog__image h3 {
@@ -2210,6 +2221,7 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
     position: relative;
+    overflow-y: scroll;
   }
 
   .is-open .main-nav__list {

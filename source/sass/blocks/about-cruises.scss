@@ -15,7 +15,7 @@
 
 .about-cruises__container {
   display: grid;
-  grid-template-columns: 1fr 560px;
+  grid-template-columns: 512px 1fr;
   column-gap: 88px;
 
   @include vp-1023 {
